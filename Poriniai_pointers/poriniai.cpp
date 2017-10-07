@@ -46,7 +46,7 @@ void writeRandValue(string FileName, int amount){
 		
 		*random=rand()%*range + *min;
 		outputFile <<*random<<endl; 
-		cout<<*random<<endl;	
+		cout<<*random<<endl;
 	}
 	
 	outputFile.close();

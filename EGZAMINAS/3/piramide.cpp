@@ -40,16 +40,10 @@ public:
 // =========================================================
 
 
-Pyramid::Pyramid() // konstruktorius
+Pyramid::Pyramid()
 {
-}
-
-// =========================================================
-void Pyramid::results()
-{
-
-	
-	string * array = UI();//patikrina ivesties duomenu validuma
+    
+    string * array = UI();//patikrina ivesties duomenu validuma
 	
 		
 	if (array[0]!="*") //jeigu UI funkcija, grazina char '*', tada vartotojo ivesti duomenys yra neteisingi
@@ -69,8 +63,7 @@ void Pyramid::results()
 		cout<<"Programa uzdaryta."<<endl;
 	}
 
-
-	
+    
 }
 // =========================================================
 
@@ -78,6 +71,7 @@ string *Pyramid::UI()
 {
 
 	repeat:
+		
 		
 	string *array = new string[2];
 
@@ -204,12 +198,11 @@ bool Pyramid::dataCheckUI(string value)
 
 int main(int argc, char *argv[])
 {
-	
-	Pyramid py;
-		
-	py.results();
 
-    system("pause");
-    return EXIT_SUCCESS;
+	Pyramid py;
+	
+	system("pause");
+    return EXIT_SUCCESS;    
+	
 }
 

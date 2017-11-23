@@ -1,7 +1,7 @@
 # Project: dd8
 # Compiler: Default GCC compiler
 # Compiler Type: MingW 3
-# Makefile created by wxDev-C++ IDE 7.4.2.569 on 29/04/17 11:51
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 21/11/17 12:10
 
 WXLIBNAME = wxmsw29u
 CPP       = g++.exe
@@ -40,4 +40,4 @@ Objects/MingW/dd8.o: $(GLOBALDEPS) dd8.cpp
 	$(CPP) -c dd8.cpp -o Objects/MingW/dd8.o $(CXXFLAGS)
 
 Objects/MingW/dd8_private.res: Objects/MingW/dd8_private.rc dd8.rc 
-	$(WINDRES) --input-format=rc -o Objects/MingW/dd8_private.res $(RCINCS) Objects/MingW/dd8_private.rc -O coff
+	$(WINDRES) --input-format=rc -o Objects/MingW/dd8_private.res $(RCINCS) Objects/MingW/DD8_PR~1.RC -O coff
